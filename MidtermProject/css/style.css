@@ -1,0 +1,299 @@
+/* this is a CSS comment*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+* {
+    /* universal selector */
+    box-sizing: border-box;
+    /* won't affect the width or the height when adding padding or border */
+}
+
+nav {
+    background-color: #ffffff00;
+    color: #eee;
+    padding: 1em 2em;
+    width: 100%;
+    z-index: 99;
+    position:relative;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+nav ul {
+    border-bottom: solid 1px #000000;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    padding-left: 0em;
+    padding-bottom: 1.5em;
+}
+
+nav ul li { 
+    display:contents;
+    margin-right: 16px;
+}
+
+nav a:link {
+    color:#020202;
+    display:inline-block;
+    font-weight: 500;
+    font-size: 2em;
+    padding: 0.5em;
+    transition: all 1s ease;
+}
+
+nav a:visited {
+    color:#353535;
+}
+
+nav a:hover {
+    color:#eee;
+    background:black;
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
+
+nav a:active {
+    color:#eee;
+    background:rgb(0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2em;
+}
+
+.button {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+header {
+    color: black;
+    /*padding: 0.7em;*/
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+figcaption {
+    margin: 0;
+    font-family: "Cormorant Upright", serif;;
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+    padding: 0.5em;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 0.5em;
+    overflow-y:auto;
+}
+
+.card h2 {
+    font-size: 32px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    margin: 0 auto;
+}
+
+footer ul {
+    border-bottom: solid 1px #000000;
+    padding-left: 0em;
+}
+
+header, article {
+    margin: 0;
+    padding: 1;
+}
+
+article {
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    max-width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    justify-content: center;
+    margin: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: block;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+div img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.homebackground {
+    background: url(../images/mainbackground.jpg) fixed;
+    background-color: #fcd2dd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+section.col1 {
+    display:flex;
+}
+
+.main {
+    width:60%;
+    padding:1em;
+    background:rgba(255, 255, 255, 0.3);
+}
+
+aside {
+    width:40%;
+    padding:1em;
+    background: rgba(55, 55, 55, 0.3);
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+}
+
+.bodytextstylesheet {
+    margin: 0;
+    font-family: "Cormorant Upright", serif;;
+    text-align: center;
+    color: #000000;
+    padding: 0.5em;
+    font-size: 30px;
+    margin: 2em;
+}
+
+.bodytext {
+    margin: 0;
+    font-family: "Cormorant Upright", serif;;
+    text-align: center;
+    color: #000000;
+    padding: 0.5em;
+    font-size: 30px;
+}
+
+
+.pdf {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.pdf, html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bodysubtext {
+    margin: 0;
+    font-family: "Cormorant Upright", serif;;
+    text-align: center;
+    color: #000000;
+    padding: 0.5em;
+    font-size: 25px;
+}
+
+.figma-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.figma-container iframe {
+    max-width: 100%;
+}
+
+.styleimg {
+    padding: 1em;
+    position: absolute;
+}
+
+.homepageimg {
+    display:flex;
+}
